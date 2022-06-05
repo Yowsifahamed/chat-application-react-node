@@ -2,6 +2,24 @@ import React, { Component } from "react";
 import '../../components/users.css';
 
 class UserOne extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { value: '' };
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        this.setState({ value: event.target.value });
+    }
+
+    handleSubmit(event) {
+        alert('A name was submitted: ' + this.state.value);
+        event.preventDefault();
+    }
+
     render() {
         return (
             <div className="content">
@@ -17,12 +35,16 @@ class UserOne extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="form-group">
-                    <div className="input-message">
-                        <input type="text" class="form-control input-control" id="exampleInputPassword1" placeholder="text" />
-                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                <form onSubmit={this.handleSubmit}>
+                    <div className="form-group">
+                        <div className="input-message">
+                            <input type="text" class="form-control input-control" id="exampleInputPassword1" placeholder="text"
+                                value={this.state.value} onChange={this.handleChange} />
+                            <button type="submit" class="btn btn-primary submit-btn" value="Submit">Submit</button>
+                        </div>
                     </div>
-                </div>
+                </form>
+
             </div>
         )
     }
