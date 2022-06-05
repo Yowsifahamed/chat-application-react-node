@@ -1,0 +1,14 @@
+.users-data{
+    border: 1px solid #b8c5df;
+    height: 100%;
+    margin: 10px 0px 10px 5px;
+    border-radius: 5px;
+}
+
+.indivual-user p{
+    margin: 0px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid;
+    border-right: 0px;
+    border-left: 0px;
+}

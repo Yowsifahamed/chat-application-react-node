@@ -36,9 +36,9 @@ class UserTwo extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="form-group">
                         <div className="input-message">
-                            <input type="text" class="form-control input-control" id="exampleInputPassword1" placeholder="text"
+                            <input type="text" className="form-control input-control" id="exampleInputPassword1" placeholder="text"
                                 value={this.state.value} onChange={this.handleChange} />
-                            <button type="submit" class="btn btn-primary submit-btn" value="Submit">Submit</button>
+                            <button type="submit" className="btn btn-primary submit-btn" value="Submit">Submit</button>
                         </div>
                     </div>
                 </form>

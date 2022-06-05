@@ -1,6 +1,7 @@
 .dashboard-content{
     display: flex;
     padding: 10px;
+    width: 85%;
 }
 
 .users{
@@ -26,4 +27,12 @@
     margin-top: 5px;
     background: #d2d7ef;
     padding: 10px;
+}
+
+.dashboard-container{
+    display: flex;
+}
+
+.available-users{
+    width: 15%;
 }
